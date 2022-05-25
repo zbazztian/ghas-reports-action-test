@@ -19,7 +19,7 @@ jobs:
       - uses: zbazztian/ghas-reports-action@v3.6
         with:
           token: ${{ secrets.ATOKEN }}
-          repo: 'zbazztian/webgoat-demo'
+          repo: 'dsp-testing/ghas-intro-6'
           # optionally define repo (default is calling repo)
 
       - uses: actions/upload-artifact@v3.0.0
