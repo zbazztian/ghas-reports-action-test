@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: zbazztian/ghas-reports-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repo: 'dsp-testing/ghas-intro-6'
+          # optionally define repo (default is calling repo)
+
+      - uses: actions/upload-artifact@v3.0.0
+        with:
+          name: results
+          path: alerts.xlsx
