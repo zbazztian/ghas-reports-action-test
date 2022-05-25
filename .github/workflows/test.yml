@@ -16,8 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-
-      - uses: zbazztian/ghas-reports-action@main
+      - uses: zbazztian/ghas-reports-action@v3.6
         with:
           token: ${{ secrets.ATOKEN }}
           repo: 'zbazztian/webgoat-demo'
