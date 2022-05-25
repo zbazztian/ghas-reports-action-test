@@ -14,7 +14,7 @@ jobs:
 
       - uses: zbazztian/ghas-reports-action@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ATOKEN }}
           repo: 'zbazztian/webgoat-demo'
           # optionally define repo (default is calling repo)
 
